@@ -95,3 +95,65 @@ ex) git push origin carami_homework_1
 > 아래 그림처럼 title 을 수정하고 Create pull request 버튼을 클릭합니다.
 
 ![pull Request](./image/pullRequest2.png)
+
+## 과제 제출이 끝난 후 main 브랜치에 merge하고 숙제를 위한 브랜치 삭제하기
+
+### 1. `main` 브랜치로 전환하기
+
+먼저, 로컬 저장소에서 `main` 브랜치로 전환합니다.
+
+```bash
+git switch main
+```
+
+### 2. 최신 변경 사항 가져오기
+
+`main` 브랜치를 최신 상태로 업데이트합니다.
+
+```bash
+git pull origin main
+```
+
+이 명령은 원격 저장소의 최신 변경 사항을 로컬의 `main` 브랜치로 가져옵니다.
+
+### 3. `carami_homework_1` 브랜치의 변경 사항을 `main`에 병합하기
+
+`carami_homework_1` 브랜치의 변경 사항을 `main` 브랜치에 병합합니다.
+
+```bash
+git merge carami_homework_1
+```
+
+이 명령을 실행하면 `carami_homework_1` 브랜치의 변경 사항이 `main` 브랜치에 병합됩니다. 병합 과정에서 충돌(conflict)이 발생할 수 있으며, 이 경우 충돌을 해결한 후 변경 사항을 커밋해야 합니다.
+
+### 4. 변경 사항을 원격 저장소에 푸시하기
+
+병합된 변경 사항을 원격 `main` 브랜치에 푸시합니다.
+
+```bash
+git push origin main
+```
+
+### 5. `carami_homework_1` 브랜치 삭제하기
+
+#### 로컬에서 `carami_homework_1` 브랜치 삭제하기
+
+로컬 저장소에서 `carami_homework_1` 브랜치를 삭제하려면 다음 명령을 사용합니다.
+
+```bash
+git branch -d carami_homework_1
+```
+
+여기서 `-d` 옵션은 브랜치가 이미 병합되었을 경우에만 삭제하도록 합니다. 만약 강제로 삭제하고 싶다면 `-D` 옵션을 사용할 수 있습니다.
+
+#### 원격 저장소에서 `carami_homework_1` 브랜치 삭제하기
+
+원격 저장소에서 브랜치를 삭제하려면 다음과 같이 `git push` 명령에 `--delete` 옵션을 사용합니다.
+
+```bash
+git push origin --delete carami_homework_1
+```
+
+이 명령은 원격 저장소의 `carami_homework_1` 브랜치를 삭제합니다.
+
+위 단계를 완료하면, `carami_homework_1` 브랜치의 내용이 `main`에 성공적으로 병합되고, 해당 브랜치는 로컬 및 원격 저장소에서 삭제됩니다.
