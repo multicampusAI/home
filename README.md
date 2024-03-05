@@ -63,3 +63,25 @@
 ### 4. IntelliJ로 가져오기
 
 > 숙제를 수행하기 위한 저장소를 IDE로 가져옵니다. 우리과정은 IntelliJ 를 사용합니다.
+
+### 5. 구현 및 commit, push
+
+> 과제의 요구사항을 잘 파악하여 과제를 해결합니다.
+
+> 완료되면 로컬 저장소에 저장합니다.
+
+```
+git add .  //git add 파일명   원하는 파일만 추가.
+git commit -m "메시지"  //커밋메시지를 작성해서 로컬저장소에 커밋합니다.
+```
+
+> 원격 저장소( github )에 올립니다.
+
+```
+git push origin 브랜치이름
+ex) git push origin carami_homework_1
+```
+
+### 6. github 에서 Pull Request를 보냅니다.
+
+> Pull Request 는 github에서 제공하는 기능으로 코드리뷰 요청을 보낼 때 사용합니다.
