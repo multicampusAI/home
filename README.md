@@ -85,3 +85,11 @@ ex) git push origin carami_homework_1
 ### 6. github 에서 Pull Request를 보냅니다.
 
 > Pull Request 는 github에서 제공하는 기능으로 코드리뷰 요청을 보낼 때 사용합니다.
+
+> push를 하고 브라우저에서 github 저장소로 이동합니다.
+> 아래 그림처럼 compare & pull request 버튼을 클릭합니다.
+> ![pull Request](./image/pullRequest1.png)
+
+> 아래 그림처럼 title 을 수정하고 Create pull request 버튼을 클릭합니다.
+
+![pull Request](./image/pullRequest2.png)
