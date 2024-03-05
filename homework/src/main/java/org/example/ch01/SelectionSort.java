@@ -6,5 +6,6 @@ public class SelectionSort {
         System.out.println("코드를 구현합니다.");
         System.out.println("구현완료!!");
         System.out.println("carami1104 가 구현함.");
+        System.out.println("kyungmi branch 에서 구현함.");
     }
 }
